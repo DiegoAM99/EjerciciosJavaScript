@@ -6,12 +6,21 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Ejercicio 01</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script>
-            function cambiaTitulo(){
-                document.title="LA PAGINA MÁS MOLONA DEL MUNDO!!!!!!!!";
+            function encuentraDia(){
+                var objetoFecha = new Date();
+                var hoy = objetoFecha.getDay();
+                var diaDeLaSemana;
+                if (hoy == 4){
+                    diaDeLaSemana = "JUEVES";
+                }
+                else{
+                    diaDeLaSemana = "NO JUEVES";
+                }
+                document.title = diaDeLaSemana;
             }
         </script>
     </head>
