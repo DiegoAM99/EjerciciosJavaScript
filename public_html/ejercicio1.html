@@ -14,19 +14,21 @@ and open the template in the editor.
                 var objetoFecha = new Date();
                 var hoy = objetoFecha.getDay();
                 var diaDeLaSemana;
-                if (hoy == 4){
-                    diaDeLaSemana = "JUEVES";
-                }
-                else{
-                    diaDeLaSemana = "NO JUEVES";
-                }
+//                if (hoy == 4){
+//                    diaDeLaSemana = "JUEVES";
+//                }
+//                else{
+//                    diaDeLaSemana = "NO JUEVES";
+//                }
+                
+                diaDeLaSemana = (hoy == 4) ? "JUEVES" : "NO JUEVES"
                 document.title = diaDeLaSemana;
             }
         </script>
     </head>
     <body>
         <div>
-            <input type="submit" value="Ejemplo 1" onclick="cambiaTitulo()"/>
+            <input type="submit" value="Ejemplo 1" onclick="encuentraDia()"/>
         </div>
     </body>
 </html>
