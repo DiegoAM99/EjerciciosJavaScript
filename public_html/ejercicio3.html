@@ -14,14 +14,28 @@ and open the template in the editor.
              
     
             function imprimeArray(){
-                var ejemploArray = ["casa", "coche"];
+                var ejemploArray = ["casa", "coche", 1, new Date(), 1.56];
+                //var numeroElementos = ejemploArray.length;
+                //for(var i=0; i<numeroElementos; i++){
+                  //  document.write(ejemploArray[i]);
+                    //console.log(ejemploArray[i]);
+                //}
+             for(var i in ejemploArray){
+                document.write(ejemploArray[i]);
+                }
                 
+                var ejemploArray2 = [];
+                ejemploArray2["Stark"] = 6;
+            }
+
+            function ejemploInstancia(){
+                ejemploArray = "";
             }
         </script>
     </head>
     <body>
         <div>
-            <input type="submit" value="Ejemplo 2" onclick="loginChungo()"/>
+            <input type="submit" value="Ejemplo 3" onclick="imprimeArray()"/>
         </div>
     </body>
 </html>
